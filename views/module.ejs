@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="public/style.css">
+
+</head>
+  <div class="container"><h1 class="heading">URL Link-Shortner</h1>
+<div class="main">
+  
+   <div class="left">
+   <img src="public/link-shortner.png" alt="linkImage">
+   </div>
+   <div class="right">
+    <form action="/" method="post">
+      <label for="input">URL</label>
+     <input type="text" id="input" name="url" placeholder="Enter Your URL">
+     <div><p class="short"  id ="copy">
+      <%= shortUrl %> 
+     </p></div>
+     <div class="button">
+      <button class="btn submit" type="submit">Short</button>
+     <button class="btn copy">Copy</button>
+  
+     </div>
+    </form>
+  </div>
+</div>
+</div>
+<body>
+  <script src="app.js"></script>
+  <script> 
+  //Trying to make that copy button But failed
+  //Dont know What to code;
+      const copyBtn = document.querySelector('.copy') 
+      const copyEl = document.querySelector('#copy')
+
+      copyBtn.addEventListner('click',  function(){
+       let text = copy.select();
+       document.execCommand('copy'); 
+          alert('text Copied');
+          location.reload(true); 
+     });
+     </script>
+
+</body>
+</html>
